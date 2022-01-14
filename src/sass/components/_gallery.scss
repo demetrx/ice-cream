@@ -1,0 +1,45 @@
+.gallery{
+    background-image: linear-gradient(
+        to bottom,
+        #FFF5F6 10%,
+        #fff 50%
+    );
+}
+.gallery__items{
+    display: flex;
+    align-items: center;
+}
+
+.gallery__item{
+margin-right: 6px;
+}
+
+.gallery__img{
+    display: block;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+.gallery__title{
+    display: none;
+}
+
+.gallery__img_big{
+    display: block;
+    object-fit: cover;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+.gallery__img_5{
+    margin-bottom: 0;
+}
+
+.gallery__item_top{
+    margin-bottom: 19px;
+}
