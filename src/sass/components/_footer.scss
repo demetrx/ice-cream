@@ -20,8 +20,8 @@
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 22px;
-    margin-bottom: 25px;
+    padding-top: 22px;
+    padding-bottom: 25px;
   }
 }
 
@@ -49,12 +49,18 @@
 
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  &__link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
   &__item:not(:last-child) {
     margin-right: 24px;
   }
   &__icon {
     background-color: #fea5bb;
-    fill: #ffffff;
+    // fill: #ffffff;
     width: 32px;
     height: 32px;
     border-radius: 50%;
