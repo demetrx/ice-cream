@@ -1,0 +1,98 @@
+.advantages-list__item-text {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  max-width: 230px;
+  color: $text-one;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 180px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+    max-width: 330px;
+  }
+}
+
+.advantages {
+  background-color: $bg-two;
+  width: 100%;
+  padding-left: 20px;
+  @media screen and (min-width: $tablet) {
+    padding-left: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 115px;
+  }
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -38px;
+  @media screen and (min-width: $tablet) {
+    margin: 0 -30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0 -15px;
+  }
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.advantages-list > .advantages-list__item {
+  margin: 0 15px;
+  margin-bottom: 38px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 60px);
+    margin: 0 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 0 15px;
+  }
+}
+.advantages-list__item::before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+.advantages-list__item {
+  &:nth-child(1)::before {
+    width: 33px;
+    background-image: url(../images/common/adv-1@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/common/adv-1@2x.png);
+    }
+  }
+}
+.advantages-list__item {
+  &:nth-child(2)::before {
+    width: 50px;
+    background-image: url(../images/common/adv-2@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/common/adv-2@2x.png);
+    }
+  }
+}
+.advantages-list__item {
+  &:nth-child(3)::before {
+    width: 44px;
+    background-image: url(../images/common/adv-3@1x.png);
+  }
+}
