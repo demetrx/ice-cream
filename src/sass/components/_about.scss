@@ -1,0 +1,52 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: $bg-two;
+}
+
+.about__title {
+  margin-bottom: 26px;
+}
+
+.discription {
+  padding: 0 30px;
+}
+
+.discription__list {
+  padding-bottom: 20px;
+}
+
+.discription__item {
+  &:not(:last-child) {
+    padding-bottom: 47px;
+  }
+  &:nth-child(2) {
+    padding-bottom: 20px;
+  }
+}
+
+.discription__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $text-one;
+}
+
+.text2 {
+  color: $text-three;
+}
+
+.about__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #d41443;
+
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+}
