@@ -25,6 +25,7 @@
 }
 
 .about__content {
+  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 50px;
@@ -47,7 +48,6 @@
 
 .description {
   padding: 0 30px;
-  position: relative;
 
   @media screen and (min-width: 768px) {
     padding: 0;
