@@ -32,11 +32,13 @@
 }
 
 .products-item {
+  position: relative;
   margin-bottom: 130px;
   width: 100%;
   width: 280px;
   height: 485px;
   border-radius: 24px;
+  padding-top: 161px;
   &:last-child {
     margin-bottom: 0px;
   }
@@ -44,7 +46,19 @@
     margin-right: 20px;
     margin-bottom: 0px;
   }
+  &::before {
+    content: '';
+    width: 249px;
+    height: 252px;
+    // background-color: red;
+    display: block;
+    position: absolute;
+    left: 16px;
+    bottom: 346px;
+  }
 }
+
+// .products-item:nth-child()
 
 .card-1 {
   background: #ffb8ca;
@@ -52,6 +66,9 @@
 
 .card-2 {
   background: #f0d1a5;
+  &::before {
+    background-image: url(../images/mobile/m-prod-coffee@1x.png);
+  }
 }
 
 .card-3 {
@@ -84,12 +101,11 @@
   }
 }
 
-// .products-button {
-//   display: inline-flex;
-//   text-align: center;
-//   width: 20px;
-//   height: 20px;
-// }
+.products-button {
+  background: transparent;
+  border: 0;
+  margin: 0 auto;
+}
 
 // .products-button::before {
 //   width: 20px;
@@ -97,3 +113,37 @@
 //   background-color: red;
 //   content: '';
 // }
+
+.dot {
+  display: block;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $bg-one;
+}
+
+.dots::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $bg-one;
+}
+
+.dots::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $bg-one;
+}
+
+.dots {
+  display: flex;
+  width: 26px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
