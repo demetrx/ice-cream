@@ -9,12 +9,33 @@
              <img src="./images/common/logo@1x.png" width="199" alt="Icecream logo" />
         </picture>
     </a>
-    <button type="button" class="menu__open-mobile">
-        <svg class="menu__open__btn">
+    <button type="button" class="menu__open" data-mobile-menu-open >
+        <svg class="menu__open__btn" aria-label="open menu">
             <use href="./images/sprite.svg#burger" width="20" height="12"></use>
         </svg>
     </button>
     </div>
+    <div class="mobile-menu" data-mobile-menu>
+            <button type="button" class="menu__close" data-mobile-menu-close>
+                <svg class="menu__close__btn" aria-label="close menu">
+                    <use href="./images/sprite.svg#close" width="14" height="14"></use>
+                </svg>
+            </button>
+            <button class="mobile__btn btn" type="button"><span>Buy now</span>
+                <svg class="mobile__btn--arrow" width="14" height="14">
+                    <use href="./images/sprite.svg#btn"></use>
+                </svg>
+            </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">About us</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">How it`s made</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
 </header>
 <div class="hero__section">
     <div class="hero__circle"></div>
