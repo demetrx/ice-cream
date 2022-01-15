@@ -10,6 +10,7 @@
 
 .discription {
   padding: 0 30px;
+  position: relative;
 }
 
 .discription__list {
@@ -38,7 +39,9 @@
   color: $text-three;
 }
 
-.about__button {
+.discription__button {
+  display: flex;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -46,7 +49,33 @@
 
   width: 176px;
   height: 44px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color $switch;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-two;
+  }
+}
+
+.about-button__arrow {
+  display: inline;
+  margin-left: 14px;
+}
+
+.discription__picture {
+  position: absolute;
+  bottom: 50px;
+  left: -20px;
+  display: flex;
+  width: 100%;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: none;
+  }
 }
