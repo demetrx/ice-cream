@@ -7,8 +7,6 @@
 
   background-image: linear-gradient(to bottom, $bg-one 175px, $bg-two 127px, $bg-two 100%);
 }
-.contacts__list {
-}
 .contacts__item {
   margin: 0 auto;
   padding: 43px 20px;
@@ -23,9 +21,6 @@
 }
 .contacts__place-name {
   display: inline-block;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -47,9 +42,6 @@
   height: 16px;
 }
 .contacts__city {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -58,9 +50,6 @@
   margin-bottom: 10px;
 }
 .contacts__description {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
@@ -73,21 +62,13 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
 }
-
 .contacts__works-days {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
 
   color: $text-one;
 }
-
 .contacts__work-time {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
 
@@ -102,9 +83,6 @@
   padding-top: 25px;
 }
 .contacts__link {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 
@@ -126,8 +104,6 @@
   border-radius: 22px;
   border: none;
 
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
