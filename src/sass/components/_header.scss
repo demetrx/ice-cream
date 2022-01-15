@@ -1,0 +1,19 @@
+.header__container {
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__open-mobile {
+  width: 20px;
+  height: 50px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.menu__open__btn {
+  height: 12px;
+  width: 20px;
+  fill: currentColor;
+}

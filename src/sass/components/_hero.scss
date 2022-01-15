@@ -1,0 +1,91 @@
+.hero-header {
+  position: relative;
+  height: 502px;
+  background-color: $bg-three;
+}
+
+.hero__section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__circle {
+  position: absolute;
+  bottom: 75px;
+  left: calc(50% - 123px);
+  width: 346px;
+  height: 344px;
+  background: $text-four;
+  border-radius: 50%;
+}
+
+.hero__icecream {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  left: calc(50% - 43px);
+  bottom: 0%;
+  background-image: url(../images/mobile/m-hero-ice@1x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/m-hero-ice@2x.png);
+  }
+}
+
+.hero__content {
+  margin-top: 130px;
+  position: relative;
+}
+
+.hero__title {
+  font-family: 'Titan One', sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-two;
+  z-index: 50;
+}
+
+.hero__title--accent {
+  @extend .hero__title;
+  font-size: 48px;
+  line-height: 1;
+  color: $text-accent;
+}
+
+.hero__link {
+  display: inline-block;
+  height: 24px;
+  margin-top: 19px;
+  padding: 8px 15px 6px 15px;
+
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  color: $text-accent;
+
+  background-color: $bg-one;
+  border-radius: 20px;
+
+  &:last-child {
+    margin-left: 4px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $bg-accent;
+    color: $text-two;
+    transition: color $switch;
+  }
+}
