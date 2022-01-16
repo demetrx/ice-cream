@@ -5,13 +5,18 @@
     <a class="logo" href="./index.html" lang="en">
         <picture>
             <source srcset="./images/common/logo@1x.png 1x,
-                          ./images/common/logo@2x.png 2x" media="(min-width:320px)" />
+                          ./images/common/logo@2x.png 2x"/>
              <img src="./images/common/logo@1x.png" width="199" alt="Icecream logo" />
         </picture>
     </a>
     <button type="button" class="menu__open" data-mobile-menu-open >
         <svg class="menu__open__btn" aria-label="open menu">
             <use href="./images/sprite.svg#burger" width="20" height="12"></use>
+        </svg>
+    </button>
+    <button class="mobile__btn mobile__btn--tablet btn" type="button"><span>Buy now</span>
+        <svg class="header__btn--arrow" width="14" height="14">
+            <use href="./images/sprite.svg#btn"></use>
         </svg>
     </button>
     </div>
@@ -28,11 +33,11 @@
             </button>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="">Home</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">About us</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">How it`s made</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">Our products</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+                        <li class="nav__item"><a data-goto=".hero-section" class="nav__link" href="#">Home</a></li>
+                        <li class="nav__item"><a data-goto=".gallery"class="nav__link" href="#">About us</a></li>
+                        <li class="nav__item"><a data-goto=".about" class="nav__link" href="#">How it`s made</a></li>
+                        <li class="nav__item"><a data-goto=".advantages" class="nav__link" href="#">Our products</a></li>
+                        <li class="nav__item"><a data-goto=".contacts" class="nav__link" href="#">Contact</a></li>
                     </ul>
                 </nav>
         </div>
@@ -40,6 +45,12 @@
 <div class="hero__section">
     <div class="hero__circle"></div>
     <div class="hero__icecream"></div>
+    <div class="hero__milk"></div>
+    <div class="hero__person"></div>
+    <ul class="hero__counts counts">
+        <li class="counts__item"><span class="counts__number">16</span><span class="counts__type">cafes</span></li>
+        <li class="counts__item"><span class="counts__number">23</span><span class="counts__type">trucks</span></li>
+    </ul>
 </div>
     <div class="hero__content">
         <h1 class="hero__title">
@@ -47,7 +58,22 @@
                 Made With</br>
                 <span class="hero__title--accent">Passion</span>
         </h1>
-        <a class="hero__link" href="#products">Products</a>
-        <a class="hero__link" href="#about">How it's made</a>
-    </div>    
+        <a class="hero__link" href="">Products</a>
+        <a class="hero__link" href="">How it's made</a>
+        <div class="hero__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <a href="">
+                <img srcset=" 
+                ./images/tablet/t-hero-arrow@1x.png 18w, 
+                ./images/tablet/t-hero-arrow@2x.png 36w, 
+                ./images/desktop/d-hero-arrow@1x.png 26w, 
+                ./images/desktop/d-hero-arrow@2x.png 52w"
+                    sizes="(min-width: 1200px) 26px, 
+                    (min-width: 768px) 18px" 
+                    src="./images/tablet/t-hero-arrow@1x.png"
+                    alt="go to">
+            </a>
+        </div>
+    </div> 
+ </div>      
 </section>
