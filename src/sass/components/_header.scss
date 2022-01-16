@@ -37,7 +37,7 @@
   padding: 60px 0;
 
   background-color: $bg-mobile;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform $switch;
 
   &--shown {
@@ -79,19 +79,14 @@
   &--arrow {
     margin-left: 20px;
     height: 12px;
-    &:hover,
-    &:focus {
-      fill: $bg-one;
-    }
     @media screen and (min-width: $tablet) {
       margin-left: 12px;
     }
   }
   &:hover,
   &:focus {
-    background-color: $bg-hover-one;
-    color: $text-two;
-    fill: $bg-one;
+    background-color: $bg-hover-two;
+    color: $text-accent;
     transition: color $switch;
   }
 }
