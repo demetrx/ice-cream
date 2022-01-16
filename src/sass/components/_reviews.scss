@@ -1,0 +1,114 @@
+.reviews__section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #d9d9d9;
+}
+.wrapper {
+  background-color: transparent;
+}
+
+.swiper {
+  width: 100%;
+  height: 520px;
+}
+.slider-item {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.swiper-pagination-bullet-active {
+  //   background-image: url(../src/images/common/house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 0%;
+}
+
+.reviews__photo {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+}
+.review__thumb {
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 71px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 12px;
+  line-height: 2.583;
+  text-align: center;
+  color: #000000;
+  background-color: #fafafa;
+}
+.review__text {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px,
+    transparent 31px,
+    transparent 61px,
+    #e1e1e1 61px,
+    #e1e1e1 62px
+  );
+}
+.review__thumb::before {
+  position: absolute;
+  left: 50px;
+  top: 32px;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  z-index: 5;
+  //   background-image: url(../src/images/common/symbol.svg);
+}
+.reviews-dots {
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32px;
+  display: flex;
+  z-index: 9;
+}
+.reviews-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  background-color: #d41443;
+}
+.reviews-dots::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #d41443;
+}
+.reviews-dots::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #d41443;
+}
+.reviwers-data {
+  margin-top: 18px;
+  text-align: center;
+}
