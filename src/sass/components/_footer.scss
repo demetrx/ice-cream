@@ -54,15 +54,28 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    &:hover .footer-social-list__icon,
+    &:focus .footer-social-list__icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $bg-accent;
+    }
   }
   &__item:not(:last-child) {
     margin-right: 24px;
   }
   &__icon {
     background-color: #fea5bb;
-    // fill: #ffffff;
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    // &:hover,
+    // &:focus {
+    //   width: 32px;
+    //   height: 32px;
+    //   border-radius: 50%;
+    //   background-color: $bg-accent;
+    // }
   }
 }

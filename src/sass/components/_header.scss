@@ -48,6 +48,9 @@
   &--shown {
     transform: translateX(0%);
   }
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+  }
 }
 
 .menu__close {
@@ -84,19 +87,14 @@
   &--arrow {
     margin-left: 20px;
     height: 12px;
-    &:hover,
-    &:focus {
-      fill: $bg-one;
-    }
     @media screen and (min-width: $tablet) {
       margin-left: 12px;
     }
   }
   &:hover,
   &:focus {
-    background-color: $bg-hover-one;
-    color: $text-two;
-    fill: $bg-one;
+    background-color: $bg-hover-two;
+    color: $text-accent;
     transition: color $switch;
   }
 }
