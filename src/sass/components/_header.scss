@@ -2,6 +2,9 @@
   padding: 6px 0;
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .menu__open {
@@ -9,7 +12,12 @@
   height: 50px;
   border: 0;
   padding: 0;
+  cursor: pointer;
   background: transparent;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    z-index: 1;
+  }
 }
 
 .menu__open__btn {
@@ -75,6 +83,9 @@
     &:focus {
       fill: $bg-one;
     }
+    @media screen and (min-width: $tablet) {
+      margin-left: 12px;
+    }
   }
   &:hover,
   &:focus {
@@ -108,4 +119,14 @@
   width: 209px;
   padding: 13px 0 11px 0;
   margin: 0 auto;
+}
+
+.mobile__btn--tablet {
+  display: none;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    z-index: 1;
+    width: 160px;
+    margin: 0 0 0 30px;
+  }
 }
