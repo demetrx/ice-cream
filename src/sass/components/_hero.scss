@@ -260,3 +260,8 @@
     color: $text-two;
   }
 }
+
+.arrow :hover,
+:focus {
+  transform: scale(1.5);
+}
