@@ -240,14 +240,28 @@
 
   background-color: $bg-one;
   border-radius: 20px;
+  &--red {
+    background-color: $bg-accent;
+    color: $text-two;
+  }
 
   &:last-child {
     margin-left: 4px;
   }
   &:hover,
   &:focus {
-    background-color: $bg-accent;
-    color: $text-two;
+    background-color: $bg-hover-two;
+    color: $text-accent;
     transition: color $switch;
   }
+  &--red:hover,
+  :focus {
+    background-color: $bg-hover-one;
+    color: $text-two;
+  }
+}
+
+.arrow :hover,
+:focus {
+  transform: scale(1.5);
 }
