@@ -15,7 +15,7 @@
   
 const menuLinks = document.querySelectorAll('.nav__link[data-goto]');
 if (menuLinks.length > 0) {
-    array.forEach(menuLink => {
+    menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
     });
 
@@ -23,10 +23,10 @@ if (menuLinks.length > 0) {
         const menuLink = e.target;
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight; 
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset; 
 
-            if (openModalBtn.classList.contains('mobile-menu--shown')) {
-                document.body.classList.remove('mobile-menu--shown');
+            if (document.querySelector('[data-mobile-menu]').classList.contains('mobile-menu--shown')) {
+                document.querySelector('[data-mobile-menu]').classList.remove('mobile-menu--shown');
             }
 
             window.scrollTo({
