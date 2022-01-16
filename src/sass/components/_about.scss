@@ -52,6 +52,10 @@
   @media screen and (min-width: 768px) {
     padding: 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    z-index: 10;
+  }
 }
 
 .description__list {
@@ -151,10 +155,14 @@
   position: absolute;
   bottom: 50px;
   left: -20px;
-  display: flex;
+  // display: flex;
   width: 100%;
 
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: -15px;
+    left: -115px;
   }
 }
