@@ -20,17 +20,17 @@
 .advantages {
   background-color: $bg-two;
   width: 100%;
-  padding-left: 20px;
+}
+.advantages-container {
   padding-bottom: 145px;
   @media screen and (min-width: $tablet) {
-    padding-left: 36px;
     padding-bottom: 140px;
   }
   @media screen and (min-width: $desktop) {
-    padding-left: 115px;
     padding-bottom: 139px;
   }
 }
+
 .advantages-row {
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +43,7 @@
   }
 }
 
-.title {
+.advantages__title {
   text-align: left;
   margin-bottom: 15px;
 }
@@ -98,5 +98,8 @@
   &:nth-child(3)::before {
     width: 44px;
     background-image: url(../images/common/adv-3@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/common/adv-3@2x.png);
+    }
   }
 }
