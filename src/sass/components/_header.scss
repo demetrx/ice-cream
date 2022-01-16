@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.menu__open-mobile {
+.menu__open {
   width: 20px;
   height: 50px;
   border: 0;
@@ -16,4 +16,96 @@
   height: 12px;
   width: 20px;
   fill: currentColor;
+}
+
+.mobile-menu {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 0;
+
+  background-color: $bg-mobile;
+  transform: translateX(100%);
+  transition: transform $switch;
+
+  &--shown {
+    transform: translateX(0%);
+  }
+}
+
+.menu__close {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  background: transparent;
+  border: none;
+}
+
+.menu__close__btn {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.mobile__btn {
+  width: 209px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  border-radius: 22px;
+  border: none;
+  background-color: $bg-one;
+  color: $text-accent;
+
+  &--arrow {
+    margin-left: 20px;
+    height: 12px;
+    &:hover,
+    &:focus {
+      fill: $bg-one;
+    }
+  }
+  &:hover,
+  &:focus {
+    background-color: $bg-hover-one;
+    color: $text-two;
+    fill: $bg-one;
+    transition: color $switch;
+  }
+}
+
+.nav {
+  margin-top: 19px;
+  font-weight: 700;
+  line-height: 1.29;
+  color: $text-two;
+}
+
+.nav__item {
+  @media screen and (max-width: 1199px) {
+    border-bottom: 1px solid #e18298;
+  }
+  &:hover,
+  &:focus {
+    color: $text-accent;
+    transition: color $switch;
+  }
+}
+
+.nav__link {
+  display: block;
+  width: 209px;
+  padding: 13px 0 11px 0;
+  margin: 0 auto;
 }
