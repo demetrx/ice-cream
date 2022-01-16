@@ -37,8 +37,13 @@
   padding: 60px 0;
 
   background-color: $bg-mobile;
-  transform: translateX(200%);
+  transform: translateX(-100%);
   transition: transform $switch;
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+    transform: translateX(-100%);
+    transition: transform $switch;
+  }
 
   &--shown {
     transform: translateX(0%);
