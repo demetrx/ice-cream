@@ -43,6 +43,9 @@
   &--shown {
     transform: translateX(0%);
   }
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+  }
 }
 
 .menu__close {
