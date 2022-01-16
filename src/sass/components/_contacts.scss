@@ -21,6 +21,7 @@
 }
 .contacts__place-name {
   display: inline-block;
+  padding-bottom: 20px;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
@@ -111,11 +112,34 @@
   text-align: center;
 }
 .contacts__btn-location {
+  display: flex;
   margin-bottom: 10px;
   background-color: #d41342;
   color: $text-two;
+  &::after {
+    content: '';
+    background-image: url(../images/common/vector_1.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    width: 8px;
+    height: 10px;
+    margin-left: 8px;
+  }
 }
 .contacts__btn-franchise {
+  display: flex;
+  padding-left: 32px;
   background-color: $bg-one;
   color: $text-accent;
+  &::after {
+    content: '';
+    background-image: url(../images/common/vector_2.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    width: 8px;
+    height: 10px;
+    margin-left: 8px;
+  }
 }
