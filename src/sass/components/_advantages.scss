@@ -34,13 +34,8 @@
 .advantages-row {
   display: flex;
   flex-wrap: wrap;
+
   margin-bottom: -38px;
-  @media screen and (min-width: $tablet) {
-    margin: 0 -30px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin: 0 -15px;
-  }
 }
 
 .advantages__title {
@@ -53,12 +48,12 @@
   margin-bottom: 38px;
   @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 60px);
-    margin: 0 30px;
+    margin: 0 30px 0;
   }
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 3 - 30px);
-    margin: 0 15px;
+    margin: 0 15 0px;
   }
 }
 .advantages__item::before {
