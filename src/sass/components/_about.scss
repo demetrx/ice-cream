@@ -32,10 +32,10 @@
 .about__title {
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
-    // margin-bottom: 50px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    // margin-bottom: 55px;
+    margin-bottom: 0;
   }
 }
 
@@ -176,20 +176,4 @@
 .about-button__arrow {
   display: inline;
   margin-left: 14px;
-}
-
-.description__picture {
-  position: absolute;
-  bottom: 50px;
-  left: -20px;
-  // display: flex;
-  width: 100%;
-
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    bottom: -15px;
-    left: -115px;
-  }
 }
