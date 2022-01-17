@@ -34,8 +34,10 @@
 .advantages-row {
   display: flex;
   flex-wrap: wrap;
-
   margin-bottom: -38px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    justify-content: space-between;
+  }
 }
 
 .advantages__title {
@@ -53,7 +55,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 3 - 30px);
-    margin: 0 15 0px;
+    margin: 0 15px 0px;
   }
 }
 .advantages__item::before {
