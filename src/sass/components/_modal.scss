@@ -100,9 +100,11 @@
     height: 25px;
     padding: 0 20px;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $bg-one;
     outline: 0;
     background-color: transparent;
+    color: $text-accent;
+    font-weight: 700;
   }
   &__label {
     margin-bottom: 3px;
