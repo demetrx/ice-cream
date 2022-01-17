@@ -1,41 +1,31 @@
 <!-- BUY NOW -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop backdrop--is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal-btn-close" data-modal-close>
-            <svg class="read-more__close-icon" width="18" height="18">
+        <button type="button" class="modal__btn--close" data-modal-close>
+            <svg  width="18" height="18">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        <p class="modal__title title">Submit your application</p>
-        <form action="#" class="buy-now__form">
-             <div class="buy-now-form__field">
-                <div class="field__warp">
-                    <label for="name" class="field__label">Name</label>
-                    <div class="field__input-warp">
-                        <input type="text" name="name" id="name" required class="field__form-input">
-                    </div>
-                </div>
-                <div class="field__warp">
-                    <label for="tel" class="field__label">Tel</label>
-                    <div class="field__input-warp">
-                        <input type="tel" name="tel" id="tel" required class="field__form-input">
-                    </div>
-                </div>
-                <div class="field__warp">
-                    <label for="mail" class="field__label">Mail</label>
-                    <div class="field__input-warp">
-                        <input type="email" name="mail" id="mail" required class="field__form-input">
-                    </div>
-                </div>
-                    <label for="user-text" class="field__label">Comment</label>
-                    <textarea name="user-text" id="user-text" class="field__modal-text"
-                        placeholder="Enter text"></textarea>
-                </div>
-                <div class="modal-policy-field">
-                    <input type="checkbox" name="policy" id="policy" class="policy-input visually-hidden">
-                    <label for="policy" class="policy-text">I agree with the newsletter and accept<a href="" class="policy-link ">Terms of an agreement</a></label>
-                </div>
-                <button type="submit" class="modal-form__submit-btn btn">Send</button>
+        <p class="modal__title">Do you want some?</p>
+        <form class="buy" name="backcall" autocomplete="on">
+            <label class="buy__item">
+                <p class="buy__label">Name</p>
+                <input class="buy__input" name="name" type="text" placeholder=" ">
+            </label>
+            <label class="buy__item">
+                <p class="buy__label">Phone number</p>
+                <input class="buy__input" name="tel" type="tel" placeholder=" ">
+            </label>
+            <label class="buy__item">
+                <p class="buy__label">E-mail</p>
+                <input class="buy__input" name="email" type="email" placeholder=" ">
+            </label>
+            <label class="terms">
+                <input class="terms__input" name="subscribtion-approval" type="checkbox">
+                <span class="checkbox"></span>
+                <p class="terms__text">Yes, I want a lot of <span>IceCream</span></p>
+            </label>
+            <button class="modal__submit" type="submit">Connect me!</button>
         </form>
     </div>
 </div>
@@ -43,9 +33,9 @@
 
 
 <!-- <h1>Hows made? -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden">
     <div class="modal">
-        <button type="button" class="modal-btn-close" data-modal-close>
+        <button type="button" class="modal-btn-close" >
              <svg class="read-more__close-icon" width="18" height="18">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
@@ -76,9 +66,9 @@
 </div>
 <!-- Our locations -->
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden">
         <div class="modal">
-            <button type="button" class="modal-btn-close" data-modal-close>
+            <button type="button" class="modal-btn-close">
             <svg class="read-more__close-icon" width="18" height="18">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
@@ -91,9 +81,9 @@
 </div>
 
 <!-- fhanchise -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden">
     <div class="modal">
-        <button type="button" class="modal-btn-close" data-modal-close>
+        <button type="button" class="modal-btn-close">
             <svg class="read-more__close-icon" width="18" height="18">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
@@ -101,7 +91,8 @@
         
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d21329442.148878552!2d-94.58275336707379!3d39.09898706072556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPQvtGA0L7QtNCwINGB0YjQsA!5e0!3m2!1sru!2sua!4v1642339212445!5m2!1sru!2sua"
-        width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
-        <h2 class="modal__fhanchise-title title">We are in the cities</h2>
+        width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>            
+    <h2 class="modal__fhanchise-title title">We are in the cities</h2>
     </div>
 </div>

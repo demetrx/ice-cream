@@ -3,10 +3,13 @@
       openModalBtn: document.querySelector('[data-mobile-menu-open]'),
       closeModalBtn: document.querySelector('[data-mobile-menu-close]'),
       modal: document.querySelector('[data-mobile-menu]'),
+      buy: document.querySelector('[data-modal-open]'),
+      
     };
   
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.buy.addEventListener('click', toggleModal);
   
     function toggleModal() {
       refs.modal.classList.toggle('mobile-menu--shown');
