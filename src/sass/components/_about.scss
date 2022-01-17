@@ -21,7 +21,7 @@
     padding-top: 125px;
     padding-bottom: 39px;
     background-image: url(../images/desktop/d-about-milk@1x.png);
-    background-position: center 106%;
+    background-position: center 108%;
   }
 
   @media screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
@@ -159,6 +159,11 @@
   border: none;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 
   transition: background-color $switch;
 
