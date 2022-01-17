@@ -4,8 +4,11 @@
   background-color: $bg-three;
   @media screen and (min-width: $tablet) {
     height: 399px;
-    background-color: $bg-three;
     padding: 37px 0 28px 0;
+  }
+    @media screen and (min-width: $desktop) {
+    height: 665px;
+    padding: 37px 0 45px 0;
   }
 }
 
@@ -36,12 +39,13 @@
     bottom: 46px;
     left: calc(50% - 90px);
   }
+  
 }
 
 .hero__icecream {
-  width: 171px;
-  height: 410px;
   position: absolute;
+  height: 410px;
+  width: 171px;
   left: calc(50% - 43px);
   bottom: 0%;
   background-image: url(../images/mobile/m-hero-ice@1x.png);
@@ -55,6 +59,7 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/mobile/m-hero-ice@2x.png);
   }
+
   @media screen and (min-width: $tablet) {
     width: 143px;
     height: 336px;
@@ -68,6 +73,19 @@
       background-image: url(../images/tablet/t-hero-ice@2x.png);
     }
   }
+  @media screen and (min-width: $desktop) {
+    width: 236px;
+    height: 557px;
+    left: calc(50% - 46px);
+    background-image: url(../images/desktop/d-hero-ice@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/d-hero-ice@2x.png);
+    }
+  }
 }
 
 .hero__content {
@@ -75,6 +93,10 @@
   position: relative;
   @media screen and (min-width: $tablet) {
     margin-top: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 84px;
+    height: 494px;
   }
 }
 
@@ -90,6 +112,10 @@
   @media screen and (min-width: $tablet) {
     font-size: 22px;
   }
+    @media screen and (min-width: $desktop) {
+    width: 277px;
+    font-size: 38px;
+    }
 }
 
 .hero__title--accent {
@@ -99,6 +125,9 @@
   color: $text-accent;
   @media screen and (min-width: $tablet) {
     font-size: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
   }
 }
 
@@ -123,6 +152,20 @@
       background-image: url(../images/tablet/t-hero-milk@2x.png);
     }
   }
+  @media screen and (min-width: $desktop) {
+    width: 188px;
+    height: 191px;
+    background-image: url(../images/desktop/d-hero-milk@1x.png);
+    bottom: 45px;
+    left: calc(50% - 563px);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/d-hero-milk@2x.png);
+    }
+  }
 }
 
 .hero__text {
@@ -140,6 +183,17 @@
       width: 18px;
       height: 18px;
       margin-top: 7px;
+    }
+  }
+   @media screen and (min-width: $desktop) {
+    width: 200px;
+    margin: 112px 0 0 180px;
+    font-size: 14px;
+
+    & img {
+      width: 26px;
+      height: 26px;
+      margin-top: 20px;
     }
   }
 }
@@ -166,6 +220,19 @@
       background-image: url(../images/tablet/t-hero-girl@2x.png);
     }
   }
+    @media screen and (min-width: $desktop) {
+    width: 293px;
+    height: 232px;
+    right: calc(50% - 531px);
+    background-image: url(../images/desktop/d-hero-girl@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/d-hero-girl@2x.png);
+    }
+  }
 }
 
 .counts {
@@ -180,6 +247,12 @@
     position: absolute;
     right: calc(50% - 340px);
     top: 94px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 92px;
+    height: 168px;
+    right: calc(50% - 540px);
+    top: 156px;
   }
 }
 
@@ -200,6 +273,14 @@
       z-index: -1;
     }
   }
+  @media screen and (min-width: $desktop) {
+    width: 77px;
+    &::after {
+      width: 30px;
+      height: 30px;
+      right: -18px;
+    }
+  }
 }
 
 .counts__number {
@@ -214,6 +295,9 @@
     letter-spacing: 0.04em;
     color: $text-accent;
   }
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+  }
 }
 
 .counts__type {
@@ -224,6 +308,9 @@
     line-height: 1.25;
     text-align: right;
     color: $text-two;
+  }
+    @media screen and (min-width: $desktop) {
+    font-size: 14px;
   }
 }
 
@@ -247,6 +334,15 @@
 
   &:last-child {
     margin-left: 4px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 11.5px 22px 11px 22px;
+    height: 40px;
+    font-size: 14px;
+
+    &:last-child {
+      margin-left: 11px;
+    }
   }
   &:hover,
   &:focus {
