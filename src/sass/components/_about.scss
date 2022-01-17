@@ -21,7 +21,7 @@
     padding-top: 125px;
     padding-bottom: 39px;
     background-image: url(../images/desktop/d-about-milk@1x.png);
-    background-position: center 106%;
+    background-position: center 108%;
   }
 
   @media screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
@@ -32,10 +32,10 @@
 .about__title {
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
-    // margin-bottom: 50px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    // margin-bottom: 55px;
+    margin-bottom: 0;
   }
 }
 
@@ -160,6 +160,11 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
   transition: background-color $switch;
 
   &:hover,
@@ -171,20 +176,4 @@
 .about-button__arrow {
   display: inline;
   margin-left: 14px;
-}
-
-.description__picture {
-  position: absolute;
-  bottom: 50px;
-  left: -20px;
-  // display: flex;
-  width: 100%;
-
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    bottom: -15px;
-    left: -115px;
-  }
 }
