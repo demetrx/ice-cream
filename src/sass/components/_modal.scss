@@ -231,13 +231,23 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $text-one;
-  overflow: scroll;
+  overflow-y: scroll;
 
   & p:not(:last-child) {
     margin-bottom: 20px;
   }
   @media screen and (max-width: 767px) {
     height: 250px;
+  }
+  @media screen and (min-width: $desktop) {
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 4px;
+    }
   }
 }
 
@@ -251,16 +261,6 @@
     font-size: 26px;
   }
 }
-
-// .modal__btn--about {
-//   width: 28px;
-//   height: 28px;
-//   background-color: $bg-accent;
-//   border-radius: 50%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 // Locations modal
 // --------------------------------------
