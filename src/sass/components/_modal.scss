@@ -162,10 +162,12 @@
   }
 }
 
-.terms:focus-within {
-  outline: 1px solid $bg-accent;
+.terms__input:focus + .checkbox {
+  border: 2px solid $bg-accent;
 }
-
+.terms__input:focus:checked + .checkbox {
+  border: 0;
+}
 .modal__submit {
   width: 209px;
   height: 44px;
