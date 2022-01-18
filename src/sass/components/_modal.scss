@@ -24,6 +24,10 @@
     pointer-events: none;
     transition: opacity $switch;
   }
+  @media screen and (min-width: $desktop) {
+    overflow: auto;
+    overflow-y: scroll;
+  }
 }
 
 .modal {

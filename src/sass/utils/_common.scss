@@ -4,6 +4,21 @@ body {
   font-size: 14px;
 }
 
+body,
+.backdrop {
+  @media screen and (min-width: $desktop) {
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: $bg-two;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg-three;
+      border: 3px solid $bg-two;
+      border-radius: 15px;
+    }
+  }
+}
+
 .container {
   padding: 0 10px;
   margin-left: auto;
