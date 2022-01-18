@@ -4,7 +4,6 @@
   letter-spacing: 0.02em;
   max-width: 230px;
   color: $text-one;
-  margin-bottom: 38px;
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.7;
@@ -21,7 +20,7 @@
   background-color: $bg-two;
   width: 100%;
 }
-.advantages-container {
+.advantages__container {
   padding-bottom: 145px;
   @media screen and (min-width: $tablet) {
     padding-bottom: 140px;
@@ -34,8 +33,7 @@
 .advantages-row {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -38px;
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     justify-content: space-between;
   }
 }
@@ -45,17 +43,12 @@
   margin-bottom: 15px;
 }
 
-.advantages-list > .advantages__item {
-  margin: 0 15px;
-  margin-bottom: 38px;
-  @media screen and (min-width: $tablet) {
-    flex-basis: calc(100% / 3 - 60px);
-    margin: 0 30px 0;
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 38px;
   }
-
-  @media screen and (min-width: $desktop) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin: 0 15px 0px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
   }
 }
 .advantages__item::before {
