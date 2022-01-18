@@ -13,7 +13,11 @@
     transform: translate(-50%, 32%) scale(0.5);
     bottom: 0vh;
     left: 50%;
-    transition: opacity $switch, scale $switch;
+    opacity: 0;
+    transition: transform $switch, opacity $switch;
+  }
+  &--is-hidden .modal--about {
+    transform: translate(-50%, 40%) scale(0.5);
   }
   &--is-hidden {
     opacity: 0;
@@ -28,7 +32,7 @@
   left: 50%;
   width: 330px;
   padding: 140px 25px 25px 25px;
-  transition: opacity $switch, scale $switch;
+  transition: opacity $switch, transform $switch;
   background-color: #ffb8ca;
   transform: translate(-50%, 32%) scale(1);
   border-radius: 10px;
@@ -145,8 +149,10 @@
 }
 .terms__input {
   position: absolute;
-  appearance: none;
-  display: none;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   &:checked + .checkbox {
     border: 0;
     background-image: url(../images/common/heart.svg);
@@ -159,6 +165,12 @@
   }
 }
 
+.terms__input:focus + .checkbox {
+  border: 2px solid $bg-accent;
+}
+.terms__input:focus:checked + .checkbox {
+  border: 0;
+}
 .modal__submit {
   width: 209px;
   height: 44px;
@@ -176,3 +188,76 @@
   background-color: $bg-accent;
   color: $text-two;
 }
+
+//------------------------------------------------
+// About modal
+
+.modal--about {
+  width: 700px;
+  height: 535px;
+  padding: 100px 40px 40px 40px;
+  background-color: #f0d1a5;
+  background-image: url(../images/desktop/d-about-milk@1x.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, 40%) scale(1);
+  @media screen and (max-width: 767px) {
+    width: 300px;
+    height: 490px;
+    padding: 100px 20px 20px 20px;
+    transform: translate(-50%, 34%) scale(1);
+  }
+
+  &::before {
+    left: 210px;
+    background-image: url(../images/desktop/d-prod-coffee@1x.png);
+    width: 280px;
+    height: 280px;
+    @media screen and (max-width: 767px) {
+      width: 250px;
+      height: 250px;
+      top: -165px;
+      left: 25px;
+    }
+  }
+}
+
+.modal__descr--about {
+  height: 300px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $text-one;
+  overflow: scroll;
+
+  & p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 250px;
+  }
+}
+
+.modal__title--about {
+  margin-bottom: 20px;
+  color: $text-two;
+  & span {
+    color: $text-accent;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+}
+
+// .modal__btn--about {
+//   width: 28px;
+//   height: 28px;
+//   background-color: $bg-accent;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
