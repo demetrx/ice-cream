@@ -221,6 +221,7 @@
     padding: 0;
   }
   @media screen and (min-width: $desktop) {
+    overflow: auto;
     overflow-y: scroll;
     &::-webkit-scrollbar {
       width: 5px;

@@ -105,6 +105,7 @@
     margin-bottom: 50px;
   }
   &__link {
+    display: block;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -118,6 +119,12 @@
     @media screen and (min-width: $tablet) {
       width: 34px;
       height: 34px;
+
+      &:hover .footer-social-list__icon,
+      &:focus .footer-social-list__icon {
+        width: 34px;
+        height: 34px;
+      }
     }
   }
   &__item:not(:last-child) {
