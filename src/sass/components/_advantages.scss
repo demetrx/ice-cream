@@ -19,14 +19,12 @@
 .advantages {
   background-color: $bg-two;
   width: 100%;
-}
-.advantages__container {
-  padding-bottom: 145px;
+  padding: 20px 0 50px 0;
   @media screen and (min-width: $tablet) {
-    padding-bottom: 140px;
+    padding: 33px 0 70px 0;
   }
   @media screen and (min-width: $desktop) {
-    padding-bottom: 139px;
+    padding: 20px 0 70px 0;
   }
 }
 
