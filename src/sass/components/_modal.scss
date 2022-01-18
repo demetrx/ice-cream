@@ -145,8 +145,10 @@
 }
 .terms__input {
   position: absolute;
-  appearance: none;
-  display: none;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   &:checked + .checkbox {
     border: 0;
     background-image: url(../images/common/heart.svg);
@@ -157,6 +159,10 @@
       height: 15px;
     }
   }
+}
+
+.terms:focus-within {
+  outline: 1px solid $bg-accent;
 }
 
 .modal__submit {
