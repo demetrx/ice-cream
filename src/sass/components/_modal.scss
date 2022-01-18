@@ -268,23 +268,26 @@
 .modal--locations {
   background-color: #c2e297;
   width: 700px;
-  padding-top: 140px;
+  padding-top: 95px;
   border: 0;
-  transform: translate(-50%, 35%) scale(1);
+  transform: translate(-50%, 37%) scale(1);
   @media screen and (max-width: 767px) {
     width: 300px;
     height: 490px;
-    padding: 100px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     transform: translate(-50%, 34%) scale(1);
   }
 
   &::before {
     background-image: url(../images/desktop/d-prod-shake@1x.png);
+    width: 280px;
+    height: 280px;
+    left: 210px;
     @media screen and (max-width: 767px) {
       width: 220px;
       height: 220px;
-      top: -165px;
-      left: 25px;
+      top: -155px;
+      left: 40px;
     }
   }
 }
