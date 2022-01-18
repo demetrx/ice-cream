@@ -41,6 +41,7 @@
   position: relative;
   margin-bottom: 130px;
   width: 100%;
+
   border-radius: 24px;
   padding: 161px 40px 40px 40px;
   &:last-child {
@@ -84,6 +85,18 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/m-prod-cream@2x.png);
     }
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/tablet/t-prod-cream@1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/t-prod-cream@2x.png);
+      }
+    }
+    // @media screen and (min-width: $desktop) {
+    //   background-image: url(../images/desktop/d-prod-cream@1x.png);
+    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //     background-image: url(../images/desktop/d-prod-cream@2x.png);
+    //   }
+    // }
   }
 }
 
@@ -94,6 +107,18 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/m-prod-coffee@2x.png);
     }
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/tablet/t-prod-coffee@1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/t-prod-coffee@2x.png);
+      }
+    }
+    // @media screen and (min-width: $desktop) {
+    //   background-image: url(../images/desktop/d-prod-coffee@1x.png);
+    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //     background-image: url(../images/desktop/d-prod-coffee@2x.png);
+    //   }
+    // }
   }
 }
 
@@ -104,11 +129,24 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/m-prod-shake@2x.png);
     }
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/tablet/t-prod-shake@1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/t-prod-shake@2x.png);
+      }
+    }
+    // @media screen and (min-width: $desktop) {
+    //   background-image: url(../images/desktop/d-prod-shake@1x.png);
+    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //     background-image: url(../images/desktop/d-prod-shake@2x.png);
+    //   }
+    // }
   }
 }
 
 .product-list__title {
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 66px;
   font-family: Titan One;
   font-weight: 400;
   font-size: 20px;
@@ -151,6 +189,7 @@
   bottom: 40px;
   left: 0;
   height: 295px;
+  padding: 0 40px;
   border-radius: 24px;
   overflow: scroll;
   z-index: 1;
@@ -192,17 +231,58 @@
   margin: 0 auto;
 }
 
-.product-list__dot {
-  display: block;
+// .product-list__dot {
+//   display: block;
+//   width: 6px;
+//   height: 6px;
+//   border-radius: 50%;
+//   background-color: $bg-one;
+// }
+
+// .product-list__dots::before {
+//   content: '';
+//   display: block;
+//   width: 6px;
+//   height: 6px;
+//   border-radius: 50%;
+//   background-color: $bg-one;
+// }
+
+// .product-list__dots::after {
+//   content: '';
+//   display: block;
+//   width: 6px;
+//   height: 6px;
+//   border-radius: 50%;
+//   background-color: $bg-one;
+// }
+
+// .product-list__dots {
+//   display: flex;
+//   width: 26px;
+//   justify-content: space-between;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
+// }
+
+.product-list__title::after {
+  position: absolute;
+  left: 106px;
+  bottom: -30px;
+  content: '';
+  // display: flex;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: $bg-one;
 }
 
-.product-list__dots::before {
+.product-list__title::before {
+  position: absolute;
+  left: 86px;
+  bottom: -30px;
   content: '';
-  display: block;
+  // display: flex;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -211,17 +291,16 @@
 
 .product-list__dots::after {
   content: '';
-  display: block;
+  position: absolute;
+  left: 137px;
+  top: 208px;
+  // display: block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: $bg-one;
-}
-
-.product-list__dots {
-  display: flex;
-  width: 26px;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    left: 107px;
+    top: 199px;
+  }
 }
