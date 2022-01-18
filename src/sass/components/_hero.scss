@@ -6,7 +6,7 @@
     height: 399px;
     padding: 37px 0 28px 0;
   }
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     height: 665px;
     padding: 37px 0 45px 0;
   }
@@ -39,7 +39,6 @@
     bottom: 46px;
     left: calc(50% - 90px);
   }
-  
 }
 
 .hero__icecream {
@@ -112,10 +111,10 @@
   @media screen and (min-width: $tablet) {
     font-size: 22px;
   }
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: 277px;
     font-size: 38px;
-    }
+  }
 }
 
 .hero__title--accent {
@@ -185,7 +184,7 @@
       margin-top: 7px;
     }
   }
-   @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: 200px;
     margin: 112px 0 0 180px;
     font-size: 14px;
@@ -220,7 +219,7 @@
       background-image: url(../images/tablet/t-hero-girl@2x.png);
     }
   }
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: 293px;
     height: 232px;
     right: calc(50% - 531px);
@@ -309,16 +308,29 @@
     text-align: right;
     color: $text-two;
   }
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
   }
 }
 
+.hero__button__list {
+  display: flex;
+  margin-top: 25px;
+}
+
+.hero__button__item {
+  &:last-child {
+    margin-left: 8px;
+  }
+  @media screen and (min-width: $desktop) {
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+}
+
 .hero__link {
-  display: inline-block;
-  height: 24px;
-  margin-top: 19px;
-  padding: 8px 15px 6px 15px;
+  padding: 8px 15px 8px 15px;
 
   font-size: 8px;
   line-height: 1.25;
@@ -332,17 +344,9 @@
     color: $text-two;
   }
 
-  &:last-child {
-    margin-left: 4px;
-  }
   @media screen and (min-width: $desktop) {
-    padding: 11.5px 22px 11px 22px;
-    height: 40px;
+    padding: 11px 22px 11px 22px;
     font-size: 14px;
-
-    &:last-child {
-      margin-left: 11px;
-    }
   }
   &:hover,
   &:focus {

@@ -57,6 +57,7 @@
     width: 100vw;
     height: 100vh;
     padding: 60px 0;
+    pointer-events: none;
 
     background-color: $bg-mobile;
     transform: translateX(-100%);
@@ -70,6 +71,7 @@
 
     &--shown {
       transform: translateX(0%);
+      pointer-events: auto;
     }
   }
 
