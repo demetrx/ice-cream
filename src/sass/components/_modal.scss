@@ -272,21 +272,21 @@
 .modal--locations {
   background-color: #c2e297;
   width: 700px;
-  padding-top: 95px;
+  padding-top: 70px;
   border: 0;
-  transform: translate(-50%, 37%) scale(1);
+  transform: translate(-50%, 38%) scale(1);
   @media screen and (max-width: 767px) {
     width: 300px;
     height: 490px;
     padding: 80px 20px 20px 20px;
-    transform: translate(-50%, 34%) scale(1);
+    transform: translate(-50%, 32%) scale(1);
   }
 
   &::before {
     background-image: url(../images/desktop/d-prod-shake@1x.png);
-    width: 280px;
-    height: 280px;
-    left: 210px;
+    width: 260px;
+    height: 260px;
+    left: 220px;
     @media screen and (max-width: 767px) {
       width: 220px;
       height: 220px;
@@ -301,7 +301,7 @@
   height: 350px;
   margin: 0 auto;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
   -webkit-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.8);
