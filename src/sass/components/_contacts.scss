@@ -24,10 +24,31 @@
     margin-bottom: 20px;
   }
   @media screen and (min-width: $tablet) {
+    height: 500px;
+    padding: 50px 32px;
     margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+  @media screen and(min-width: $desktop) {
+    padding: 51px 44px 62px 43px;
+    width: 330px;
+    height: 572px;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.contacts__description {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  @media screen and(min-width: $tablet) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 32px;
   }
 }
 .contacts__place-name {
@@ -47,6 +68,10 @@
   height: 16px;
 
   margin-bottom: 25px;
+  @media screen and(min-width:$tablet) {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
 }
 .second {
   background-color: #c2e297;
@@ -60,31 +85,60 @@
   color: $text-one;
 
   margin-bottom: 10px;
+  @media screnn and(min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 16px;
+  }
 }
-.contacts__description {
+.contacts__text {
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
-  padding-bottom: 25px;
-
-  border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.8;
+  }
 }
 .contacts__schedule {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
+  @media screen and(min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contacts__works-days {
   font-size: 12px;
   line-height: 1.83;
-
   color: $text-one;
+  @media screnn and(min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 16px;
+  }
 }
 .contacts__work-time {
   font-size: 12px;
   line-height: 1.83;
-
   color: $text-four;
+  @media screnn and(min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 16px;
+  }
 }
 .contacts__work {
   &:not(:last-child) {
@@ -93,12 +147,25 @@
 }
 .contacts__contact {
   padding-top: 25px;
+  @media screen and(min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+  }
 }
 .contacts__link {
   font-size: 12px;
   line-height: 1.5;
-
   color: $text-three;
+  @media screnn and(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.8;
+  }
 }
 
 // BUTTONS
@@ -107,6 +174,18 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: 196px;
+  }
+  @media screen and(min-width: $desktop) {
+    display: flex;
+    margin-left: 380px;
+  }
+}
+.conacts-wrapper__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
   }
 }
 .contacts__btn {
@@ -132,7 +211,7 @@
 }
 .contacts__btn-location {
   display: flex;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   background-color: #d41342;
   color: $text-two;
   &::after {
