@@ -4,6 +4,10 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-weight: 700;
+  line-height: calc(21 / 14);
+  letter-spacing: 0.04em;
+  color: $text-two;
   @media screen and (min-width: $tablet) {
     padding-top: 122px;
     padding-bottom: 112px;
@@ -29,6 +33,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-right: -20px;
+    justify-content: space-between;
   }
 }
 
@@ -37,8 +42,7 @@
   margin-bottom: 130px;
   width: 100%;
   border-radius: 24px;
-  padding-top: 161px;
-  padding-bottom: 40px;
+  padding: 161px 40px 40px 40px;
   &:last-child {
     margin-bottom: 0px;
   }
@@ -56,15 +60,20 @@
     pointer-events: none;
   }
   @media screen and (min-width: $tablet) {
-    margin-right: 20px;
+    width: 220px;
     margin-bottom: 0px;
-    padding-top: 152px;
+    padding: 152px 10px 40px 10px;
     &::before {
       width: 220px;
       height: 233px;
       left: 0px;
       bottom: 363px;
     }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
@@ -110,16 +119,9 @@
 }
 
 .product-list__text {
-  padding: 0 40px;
   margin-bottom: 30px;
-  font-weight: 700;
-  line-height: calc(21 / 14);
-  letter-spacing: 0.04em;
-  color: $text-two;
   @media screen and (min-width: $tablet) {
     line-height: calc(25 / 14);
-    padding-left: 11px;
-    padding-right: 11px;
     margin-bottom: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -131,6 +133,13 @@
 
 .overlay__text {
   overflow: scroll;
+  padding: 0 40px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 45px;
+  }
 }
 
 .overlay.is-hidden {
@@ -162,11 +171,8 @@
 }
 
 .overlay__close {
-  // position: absolute;
-  // top: 20px;
-  // right: 20px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   width: 40px;
   height: 40px;
   background-color: transparent;
