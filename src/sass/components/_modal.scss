@@ -268,8 +268,9 @@
 .modal--locations {
   background-color: #c2e297;
   width: 700px;
-  padding-top: 150px;
+  padding-top: 140px;
   border: 0;
+  transform: translate(-50%, 35%) scale(1);
   @media screen and (max-width: 767px) {
     width: 300px;
     height: 490px;
@@ -280,8 +281,8 @@
   &::before {
     background-image: url(../images/desktop/d-prod-shake@1x.png);
     @media screen and (max-width: 767px) {
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
       top: -165px;
       left: 25px;
     }
