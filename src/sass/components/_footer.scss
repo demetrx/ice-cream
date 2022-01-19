@@ -108,6 +108,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+
     &:hover .footer-social-list__icon,
     &:focus .footer-social-list__icon {
       width: 32px;
@@ -118,6 +119,11 @@
     @media screen and (min-width: $tablet) {
       width: 34px;
       height: 34px;
+      &:hover .footer-social-list__icon,
+      &:focus .footer-social-list__icon {
+        width: 34px;
+        height: 34px;
+      }
     }
   }
   &__item:not(:last-child) {
@@ -139,4 +145,7 @@
       height: 34px;
     }
   }
+}
+.footer-social-list__icon {
+  transition: background-color $switch;
 }

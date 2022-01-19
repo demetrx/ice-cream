@@ -122,6 +122,7 @@
   border: none;
   background-color: $bg-one;
   color: $text-accent;
+  transition: background-color $switch;
 
   &--arrow {
     margin-left: 20px;
@@ -137,7 +138,6 @@
   &:focus {
     background-color: $bg-hover-two;
     color: $text-accent;
-    transition: color $switch;
   }
 }
 
