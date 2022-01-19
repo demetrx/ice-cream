@@ -231,14 +231,13 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.04em;
   color: $text-one;
   overflow-y: scroll;
 
   & span {
-    font-weight: 600;
-    font-family: italic;
+    font-weight: 700;
   }
 
   & p:not(:last-child) {

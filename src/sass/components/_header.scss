@@ -49,29 +49,27 @@
 
 .mobile-menu {
   z-index: 10;
+  pointer-events: none;
   @media screen and (max-width: 1199px) {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100vw;
     height: 100vh;
     padding: 60px 0;
-    pointer-events: none;
 
     background-color: $bg-mobile;
-    transform: translateX(-100%);
+    transform: translateX(100vw);
     transition: transform $switch;
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       max-width: 254px;
-      transform: translateX(-100%);
+      transform: translateX(100vw);
       transition: transform $switch;
     }
 
     &--shown {
-      transform: translateX(0%);
-      pointer-events: auto;
+      transform: translateX(calc(100vw - 254px));
     }
   }
 
@@ -165,10 +163,6 @@
 .nav__item {
   @media screen and (max-width: 1199px) {
     border: 1px solid #e18298;
-  }
-  &:hover,
-  &:focus {
-    color: $text-accent;
     transition: color $switch;
   }
 }
@@ -176,8 +170,12 @@
 .nav__link {
   display: block;
   width: 209px;
-  padding: 13px 0 11px 0;
+  padding: 13px 11px;
   margin: 0 auto;
+  &:hover,
+  &:focus {
+    color: $text-accent;
+  }
   @media screen and (min-width: $desktop) {
     width: auto;
     &:first-child {
