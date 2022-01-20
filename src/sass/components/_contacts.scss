@@ -6,6 +6,14 @@
   height: 100%;
 
   background-image: linear-gradient(to bottom, $bg-one 140px, $bg-two 127px, $bg-two 100%);
+
+  @media screen and(min-width:$desktop) {
+    background-image: url(../images/common/contacts.png),
+      linear-gradient(to bottom, $bg-one 140px, $bg-two 127px, $bg-two 100%);
+    background-repeat: no-repeat;
+    background-size: auto 382px;
+    background-position: 50% 168px, 0 0;
+  }
 }
 .contacts__list {
   @media screen and (min-width: $tablet) {
@@ -158,6 +166,11 @@
   font-size: 12px;
   line-height: 1.5;
   color: $text-three;
+  transition: color $switch;
+  &:hover,
+  &:focus {
+    color: $text-accent;
+  }
   @media screnn and(min-width: $tablet) {
     font-size: 14px;
     line-height: 1.8;
