@@ -10,9 +10,10 @@
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
     refs.buy.addEventListener('click', toggleModal);
+    
   
     function toggleModal() {
-      refs.modal.classList.toggle('mobile-menu--shown');
+        refs.modal.classList.toggle('mobile-menu--shown');
     }
 })();
   

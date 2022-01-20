@@ -194,6 +194,82 @@
 }
 
 //------------------------------------------------
+//Hero modal
+.modal--hero {
+  width: 700px;
+  height: 535px;
+  padding: 100px 40px 40px 40px;
+  // background-color: $bg-two;
+  background-image: url(../images/desktop/d-about-milk@1x.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, 37%) scale(1);
+  @media screen and (max-width: 767px) {
+    width: 300px;
+    height: 490px;
+    padding: 100px 20px 20px 20px;
+    transform: translate(-50%, 34%) scale(1);
+  }
+
+  &::before {
+    left: 210px;
+    background-image: url(../images/desktop/d-hero-milk@1x.png);
+    width: 280px;
+    height: 280px;
+    @media screen and (max-width: 767px) {
+      width: 250px;
+      height: 250px;
+      top: -165px;
+      left: 25px;
+    }
+  }
+}
+
+.modal__hero--about {
+  height: 300px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.04em;
+  color: $text-one;
+  overflow-y: scroll;
+
+  & span {
+    font-weight: 700;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 250px;
+  }
+  @media screen and (min-width: $desktop) {
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(27, 4, 4, 0.6);
+      border-radius: 4px;
+    }
+  }
+}
+
+.modal__title--hero {
+  margin-bottom: 20px;
+  color: $text-accent;
+  & span {
+    color: $text-two;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+}
+
+//------------------------------------------------
 // About modal
 
 .modal--about {

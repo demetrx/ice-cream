@@ -171,8 +171,10 @@
   display: none;
   @media screen and (min-width: $tablet) {
     display: block;
+    position: absolute;
+    bottom: -140px;
+    left: 125px;
     width: 114px;
-    margin: 66px 0 0 124px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
@@ -185,8 +187,9 @@
     }
   }
   @media screen and (min-width: $desktop) {
+    bottom: 60px;
+    left: 180px;
     width: 200px;
-    margin: 112px 0 0 180px;
     font-size: 14px;
 
     & img {
@@ -315,7 +318,7 @@
 
 .hero__button__list {
   display: flex;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .hero__button__item {
@@ -330,7 +333,7 @@
 }
 
 .hero__link {
-  padding: 8px 15px 8px 15px;
+  padding: 8px 15px;
 
   font-size: 8px;
   line-height: 1.25;
@@ -339,29 +342,35 @@
 
   background-color: $bg-one;
   border-radius: 20px;
+  transition: color $switch;
   &--red {
     background-color: $bg-accent;
     color: $text-two;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 11px 22px 11px 22px;
+    padding: 11px 22px;
     font-size: 14px;
+    transition: color $switch;
   }
   &:hover,
   &:focus {
     background-color: $bg-hover-two;
     color: $text-accent;
-    transition: color $switch;
   }
   &--red:hover,
-  :focus {
+  &--red:focus {
     background-color: $bg-hover-one;
     color: $text-two;
   }
 }
 
-.arrow :hover,
-.arrow :focus {
-  transform: scale(1.5);
+.arrow {
+  height: 26px;
+  background: transparent;
+  border: none;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
