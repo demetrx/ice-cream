@@ -342,7 +342,7 @@
 
   background-color: $bg-one;
   border-radius: 20px;
-  transition: color $switch;
+  transition: color $switch, background-color $switch;
   &--red {
     background-color: $bg-accent;
     color: $text-two;
@@ -351,10 +351,9 @@
   @media screen and (min-width: $desktop) {
     padding: 11px 22px;
     font-size: 14px;
-    transition: color $switch;
   }
   &:hover,
-  &:focus {
+  &:focus{
     background-color: $bg-hover-two;
     color: $text-accent;
   }
@@ -369,8 +368,10 @@
   height: 26px;
   background: transparent;
   border: none;
+  transition: scale $switch;
+  transform: translateY(0%);
   &:hover,
   &:focus {
-    transform: scale(1.5);
+    transform: translateY(-10%) scale(1.15);
   }
 }

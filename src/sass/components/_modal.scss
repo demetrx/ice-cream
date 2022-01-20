@@ -145,6 +145,7 @@
   border: 2px solid $bg-one;
   border-radius: 2px;
   margin-right: 8px;
+  transition: border-color $switch;
   @media screen and (max-width: 767px) {
     width: 15px;
     height: 15px;
@@ -197,37 +198,37 @@
 //Hero modal
 .modal--hero {
   width: 700px;
-  height: 535px;
-  padding: 100px 40px 40px 40px;
+  height: 470px;
+  padding: 100px 40px 20px 40px;
   // background-color: $bg-two;
   background-image: url(../images/desktop/d-about-milk@1x.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  transform: translate(-50%, 37%) scale(1);
+  transform: translate(-50%, 30%) scale(1);
   @media screen and (max-width: 767px) {
     width: 300px;
-    height: 490px;
-    padding: 100px 20px 20px 20px;
-    transform: translate(-50%, 34%) scale(1);
+    height: 440px;
+    padding: 80px 20px 20px 20px;
+    transform: translate(-50%, 30%) scale(1);
   }
 
   &::before {
     left: 210px;
-    background-image: url(../images/desktop/d-hero-milk@1x.png);
+    background-image: url(../images/desktop/d-hero-milk@2x.png);
     width: 280px;
     height: 280px;
     @media screen and (max-width: 767px) {
-      width: 250px;
-      height: 250px;
-      top: -165px;
-      left: 25px;
+      width: 220px;
+      height: 220px;
+      top: -150px;
+      left: 50px;
     }
   }
 }
 
 .modal__hero--about {
-  height: 300px;
+  height: 280px;
   font-size: 14px;
   font-weight: 500;
   line-height: 2;

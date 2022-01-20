@@ -49,7 +49,7 @@
 
 .mobile-menu {
   z-index: 10;
-  pointer-events: none;
+  
   @media screen and (max-width: 1199px) {
     position: fixed;
     top: 0;
@@ -57,26 +57,31 @@
     width: 100vw;
     height: 100vh;
     padding: 60px 0;
+    pointer-events: none;
 
     background-color: $bg-mobile;
     transform: translateX(100vw);
     transition: transform $switch;
+    &--shown {
+      transform: translateX(0);
+      pointer-events: all;
+    }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       max-width: 254px;
       transform: translateX(100vw);
       transition: transform $switch;
+      &--shown {
+        transform: translateX(calc(100vw - 254px));
+      }
     }
 
-    &--shown {
-      transform: translateX(calc(100vw - 254px));
-    }
   }
 
   @media screen and (min-width: $desktop) {
     position: fixed;
     top: 38px;
-    margin-left: 14%;
+    margin-left: 168px;
     max-height: 44px;
     display: flex;
     align-items: center;
@@ -162,8 +167,11 @@
 
 .nav__item {
   @media screen and (max-width: 1199px) {
-    border: 1px solid #e18298;
+    border-top: 1px solid #e18298;
     transition: color $switch;
+    &:last-child{
+      border-bottom: 1px solid #e18298;
+    }
   }
 }
 
@@ -172,6 +180,7 @@
   width: 209px;
   padding: 13px 11px;
   margin: 0 auto;
+  transition: color $switch;
   &:hover,
   &:focus {
     color: $text-accent;
