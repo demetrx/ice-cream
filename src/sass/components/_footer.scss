@@ -40,14 +40,14 @@
 
     width: 150px;
     margin: 0 auto;
-    margin-top: 22px;
+    padding-top: 22px;
     @media screen and (min-width: $tablet) {
       line-height: 1.86;
       min-width: 276px;
-      margin-top: 29px;
+      padding-top: 29px;
     }
     @media screen and (min-width: $desktop) {
-      margin-top: 9px;
+      padding-top: 9px;
     }
   }
 
