@@ -49,7 +49,7 @@
 
 .mobile-menu {
   z-index: 10;
-  
+
   @media screen and (max-width: 1199px) {
     position: fixed;
     top: 0;
@@ -75,7 +75,6 @@
         transform: translateX(calc(100vw - 254px));
       }
     }
-
   }
 
   @media screen and (min-width: $desktop) {
@@ -169,7 +168,7 @@
   @media screen and (max-width: 1199px) {
     border-top: 1px solid #e18298;
     transition: color $switch;
-    &:last-child{
+    &:last-child {
       border-bottom: 1px solid #e18298;
     }
   }
@@ -201,4 +200,20 @@
     width: 160px;
     margin: 0 0 0 30px;
   }
+}
+
+.sandae {
+  position: absolute;
+  right: 0;
+  font-size: 28px;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  top: 9px;
+  background-color: #ffb8ca;
+  width: 140px;
+  text-align: center;
+  color: #c7133e;
+}
+.logo-sandae {
+  position: relative;
 }
